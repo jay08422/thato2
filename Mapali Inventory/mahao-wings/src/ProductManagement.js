@@ -87,6 +87,7 @@ const ProductManagement = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newProduct)
       });
+      // eslint-disable-next-line
       const data = await response.json();
       // After adding the new product, fetch the latest products
       fetchProducts();
